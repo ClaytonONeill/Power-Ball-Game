@@ -1,0 +1,187 @@
+body  {
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  background-color: grey;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 10px 0 0 0;
+}
+
+img { 
+  height: 200px;
+  width: 95%;
+  border: 2px dotted white;
+}
+
+#P-1 {
+  text-decoration: underline;
+}
+
+button {
+  position: relative;
+  left: 280px;
+}
+
+
+#button-1  {
+  background-color: red;
+  width: 100px;
+  height: 55px;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+#button-2 {
+  background-color: red;
+  width: 100px;
+  height: 55px;
+  border-radius: 5px;
+ }  
+
+button:hover  {
+  cursor: pointer;
+  border: -3px solid black;
+  box-shadow: 0px 0px 4px black;
+}
+  
+
+ #numbers-1  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 110px;
+    border-radius: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+ }
+
+#numbers-2  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 100px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#numbers-3  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 90px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#numbers-4  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 80px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+ #numbers-5  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 70px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #numbers-6  {
+    width: 75px;
+    height: 65px;
+    position: relative;
+    top: 170px; 
+    right: 60px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #numbers-6:hover  {
+    background-color: red;
+  }
+
+ #demo  {
+  position: relative;
+  left: 605px;
+  height: 30px;
+  width: 200px;
+  background-color: white;
+  text-align: center;
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+input[type = "email"] {
+  outline: none;
+  font-color: black;
+
+}
+
+input[type = "email"]:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+input[type="submit"]  {
+    width: 80px;
+    height: 30px; 
+    position: relative;
+    top: 170px; 
+    right: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;  
+  }
+
+input[type="submit"]:hover  {
+  cursor: pointer;
+  box-shadow: 0px 0px 4px black;
+}
+
+#trys {
+  position: relative;
+  top: 160px;
+  right: 580px;
+}
+
+#trys-text {
+  position: relative;
+  top: 200px;
+  right: 620px;
+}
+
+footer  {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;  
+  text-align: center;
+  background-color: rgba(0,0,0, .4);
+  color: white;
+}
