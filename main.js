@@ -14,22 +14,34 @@ var ok = document.querySelectorAll("input.play");
 console.log(ok);
 
 function randomNumbers() {
-  for (n = 1; n <= 6; ++n)	{
-  var i = Math.floor((Math.random() * (69-n)) + 1);
-  winningNumbers.push(i);
-  document.getElementById("demo").innerHTML = winningNumbers;
-  console.log(winningNumbers);
-  winner();
- }
+	for (n = 1; n <= 6; ++n) {
+		// Looks like you do -1 here in order to avoid getting a zero
+		// hint: look into Math.ceil()
+		var i = Math.floor((Math.random() * (69-n) - 1));
+		winningNumbers.push(i);
+		document.getElementById("demo").innerHTML = winningNumbers;
+		console.log(winningNumbers);
+		// since this for loop will run 6 times,
+		// so will this call to winner() - is this what you want?
+		winner();
+	}
 }
 
 function winner()	{
+	// as an example, logging each time we are inside of this function. How manby times do you want this function to be called?
+	console.log('in winner')
 	if (winningNumbers.length === yourNumbers.length && JSON.stringify(winningNumbers) === JSON.stringify(yourNumbers))	{
 		alert("you win!");
 	} else if (winningNumbers.length === yourNumbers.length)	{
 		alert("sorry play again");
 	}
   }
+
+  // in the above function, looks like you do a JSON.stringify of winningNumbers and of yourNumbers.
+  // unfortunately, there is no winning scenario currently, because this comparison:
+  // ``` JSON.stringify(winningNumbers) === JSON.stringify(yourNumbers) ```
+  // will always come back false
+  // hint: try a console.log of each of those on either side of the "===" operator to see what you're comparing to each other.
 
 
 function reset()	{
